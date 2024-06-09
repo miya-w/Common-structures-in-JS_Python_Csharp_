@@ -1,16 +1,16 @@
 ## Most common structures in Programing languages Javascript, Python, C#:
-
-- Variables: Used to store data that can be used and manipulated throughout a program.
-- Data Types: Define the type of data a variable can hold, such as integers, floats, strings, booleans, etc.
-- Operators: Symbols that perform operations on variables and values. Common operators include arithmetic operators (+, -, *, /), comparison operators (==, !=, <, >, <=, >=), and logical operators (&&, ||, !).
-- Control Structures:
+### Table of Contents
+- [Input/Output](#inputoutput) Operations that handle interaction with the user or other systems, such as print or console.log for output, and input for input.
+- [Variables](#variables) Used to store data that can be used and manipulated throughout a program.
+- [Data Types](#data-types) Define the type of data a variable can hold, such as integers, floats, strings, booleans, etc.
+- [Operators](#operators) Symbols that perform operations on variables and values. Common operators include arithmetic operators (+, -, *, /), comparison operators (==, !=, <, >, <=, >=), and logical operators (&&, ||, !).
+- [Control Structures](#control-structures)
     - Conditional Statements: Allow the execution of code based on certain conditions (if, else if, else, switch).
     - Loops: Allow the repeated execution of a block of code (for, while, do while, foreach).
-- Functions/Methods: Blocks of code designed to perform a particular task, which can be reused throughout a program.
-- Input/Output: Operations that handle interaction with the user or other systems, such as print or console.log for output, and input for input.
-- Collections: Data structures that store multiple values, such as arrays, lists, sets, and dictionaries (or maps).
-- Classes and Objects: Fundamental to object-oriented programming, these are blueprints for creating objects (instances of classes) that encapsulate data and behaviors.
-- Exception Handling: Structures to handle errors and exceptions to ensure the program can deal with unexpected situations (try, catch, finally).
+- [Functions/Methods](#functionsmethods) Blocks of code designed to perform a particular task, which can be reused throughout a program.
+- [Collections](#collections) Data structures that store multiple values, such as arrays, lists, sets, and dictionaries (or maps).
+- [Classes and Objects](#classes-and-objects) Fundamental to object-oriented programming, these are blueprints for creating objects (instances of classes) that encapsulate data and behaviors.
+- [Exception Handling](#exception-handling) Structures to handle errors and exceptions to ensure the program can deal with unexpected situations (try, catch, finally).
 
 | Structure               | JavaScript                               | Python                                      | C#                                      |
 |-------------------------|------------------------------------------|---------------------------------------------|-----------------------------------------|
@@ -25,7 +25,10 @@
 | **Classes and Objects** | `class MyClass { constructor() { ... } }` | `class MyClass: def __init__(self): ...`    | `class MyClass { public MyClass() { ... } }` |
 | **Exception Handling**  | `try`, `catch`, `finally`                | `try`, `except`, `finally`                  | `try`, `catch`, `finally`               |
 
+[Back to top](#table-of-contents)
 
+## inputoutput
+Outputs a message to the console 
 
 | Feature              | JavaScript                      | Python                           | C#                                 |
 |----------------------|---------------------------------|----------------------------------|------------------------------------|
@@ -36,7 +39,9 @@
 | **Example**          | `let x = 10;`                   | `x = 10`                         | `int x = 10;`                       |
 |                      | `console.log("x is", x);`       | `print("x is", x)`               | `Console.WriteLine("x is " + x);`   |
 
-## Variable
+[Back to top](#table-of-contents)
+
+## variables
 | Feature                | JavaScript                        | Python                            | C#                                   |
 |------------------------|-----------------------------------|-----------------------------------|--------------------------------------|
 | **Variable Declaration** | `let x = value;`                | `x = value`                       | `int x = value;` (for integers)      |
@@ -51,7 +56,7 @@
 |                        | `let name = "Alice";`            | `name = "Alice"`                  | `string name = "Alice";`             |
 |                        | `let isTrue = false;`            | `is_true = False`                 | `bool isTrue = false;`               |
 
-
+[Back to top](#table-of-contents)
 ## conditional (if-else) syntax
 
 | Feature           | JavaScript                                   | Python                                    | C#                                         |
@@ -81,9 +86,9 @@
 |                   |                                              |                                           | `  Console.WriteLine("x is 5 or less");`   |
 |                   |                                              |                                           | `}`                                        |
 
+[Back to top](#table-of-contents)
 
-
-## For Loop
+## Loop
 
 | Loop Type     | JavaScript                          | Python                             | C#                                   |
 |---------------|-------------------------------------|------------------------------------|--------------------------------------|
@@ -105,7 +110,7 @@
 |               | `  console.log(item);`              | `  print(item)`                    | `  Console.WriteLine(item);`         |
 |               | `});`                               |                                    | `}`                                  |
 
-
+[Back to top](#table-of-contents)
 
 ## Switch 
 
@@ -133,7 +138,7 @@
 |                   | `    console.log("Weekend!");`                            |                                                  | `    Console.WriteLine("Weekend!");`                      |
 |                   | `}`                                                       |                                                  | `    break;`                                              |
 |                   |                                                           |                                                  | `}`                                                       |
-
+[Back to top](#table-of-contents)
 
 ## function/method syntax
 
@@ -158,7 +163,9 @@
 |                       | `}`                                       |                                       | `}`                                     |
 |                       | `console.log(add(2, 3));`                 | `print(add(2, 3))`                    | `Console.WriteLine(Add(2, 3));`         |
 
+[Back to top](#table-of-contents)
 ## Array and List
+**Collections**: Data structures that store multiple values, such as arrays, lists, sets, and dictionaries (or maps).
 
 - JavaScript
     - Array: Used to store multiple values in a single variable. Can contain elements of different types.
@@ -186,3 +193,6 @@
 | **Example**          | `let arr = [1, 2, 3];`          | `let obj = {key1: 'value1'};`       | `list = [1, 2, 3]`                   | `set_var = {1, 2, 3}`               | `dict = {'key1': 'value1'}`         | `int[] arr = {1, 2, 3};`            | `List<int> list = new List<int>{1, 2, 3};` |
 |                      | `arr.push(4);`                  | `obj['key2'] = 'value2';`           | `list.append(4)`                     | `set_var.add(4)`                    | `dict['key2'] = 'value2'`           | N/A                                 | `list.Add(4);`                      |
 |                      | `for (let i of arr) { ... }`    | `for (let key in obj) { ... }`      | `for i in list: ...`                 | `for i in set_var: ...`             | `for key, value in dict.items(): ...` | `foreach (int i in arr) { ... }`    | `foreach (int i in list) { ... }`   |
+
+
+[Back to top](#table-of-contents)
