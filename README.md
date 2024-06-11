@@ -57,7 +57,8 @@ Outputs a message to the console
 |                        | `let isTrue = false;`            | `is_true = False`                 | `bool isTrue = false;`               |
 
 [Back to top](#table-of-contents)
-## conditional (if-else) syntax
+## control-structures 
+conditional (if-else) syntax
 
 | Feature           | JavaScript                                   | Python                                    | C#                                         |
 |-------------------|----------------------------------------------|-------------------------------------------|--------------------------------------------|
@@ -140,7 +141,8 @@ Outputs a message to the console
 |                   |                                                           |                                                  | `}`                                                       |
 [Back to top](#table-of-contents)
 
-## function/method syntax
+## functionsmethods
+function/method syntax
 
 
 | Feature               | JavaScript                                | Python                                | C#                                      |
@@ -164,7 +166,13 @@ Outputs a message to the console
 |                       | `console.log(add(2, 3));`                 | `print(add(2, 3))`                    | `Console.WriteLine(Add(2, 3));`         |
 
 [Back to top](#table-of-contents)
-## Array and List
+
+
+
+
+
+## collections
+Array and List
 **Collections**: Data structures that store multiple values, such as arrays, lists, sets, and dictionaries (or maps).
 
 - JavaScript
